@@ -1,0 +1,8 @@
+# keep shell scripts and logs with LF endings so WSL/Linux setups work
+* text=auto
+*.sh text eol=lf
+*.py text eol=lf
+*.php text eol=lf
+*.conf text eol=lf
+*.ini text eol=lf
+*.log text eol=lf

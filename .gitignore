@@ -1,0 +1,4 @@
+# local run artifacts — logs are curated into results/ manually
+harness/__pycache__/
+*.pyc
+results/*.tmp

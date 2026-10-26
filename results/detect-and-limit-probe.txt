@@ -1,0 +1,8 @@
+target:    http://127.0.0.1:8080
+version:   8.5.11
+verdict:   VULNERABLE  (branch 8.5 fixed in 8.5.12)
+
+[probe] with Content-Length: wire=18.8MB parts=300000
+with Content-Length          status=200 err=                                         body=no_parts_parsed worker_pid=112171 
+[probe] chunked (no Content-Length): wire=18.8MB parts=300000
+chunked (no Content-Length)  status=200 err=                                         body=no_parts_parsed worker_pid=120490 
