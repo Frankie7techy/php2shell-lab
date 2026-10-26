@@ -39,13 +39,17 @@ sends 1020 multipart parts with 48-384 KB part names over
    reachable but not fully initialized, followed by request shutdown over
    that state.
 
-   ~60/60 (first campaign) and 400/400 (varied-size campaign) requests hit
-   this path. The OOM-failure point was moved across the parse by varying the
-   part-name length per request.
+   ~60/60 (first campaign) and ~400/400 plus a 10-burst sanity set on the
+   varied-size campaign — **471 in-parse OOM fatals in total, a ~100%
+   trigger rate** across every chunked trigger request in
+   `results/oom-campaign-400.log` (excerpt: `results/oom-fatal-excerpt.log`).
+   The OOM failure point was moved across the parse by varying the part-name
+   length per request (128-512 KB; sizes under ~128 KB never reach the limit
+   because the parsed amplification is only ~1.2x wire size).
 
 ### Not observed: worker segfault / heap corruption
 
-~460 in-parse OOM draws produced **zero** segfaults, `free()`/`malloc()`
+~470 in-parse OOM draws produced **zero** segfaults, `free()`/`malloc()`
 corruption aborts, or worker deaths in this environment. Honest read: the
 wrong-moment landing is a low-probability event per request (consistent with
 CVSS `AC:H`) and full control-flow hijack additionally requires the heap
