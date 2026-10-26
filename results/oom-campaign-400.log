@@ -1,0 +1,21 @@
+  [0/400] {'ok': 1, 'reset': 0, 'timeout': 0, 'http_err': 0}
+  [25/400] {'ok': 26, 'reset': 0, 'timeout': 0, 'http_err': 0}
+  [50/400] {'ok': 51, 'reset': 0, 'timeout': 0, 'http_err': 0}
+  [75/400] {'ok': 76, 'reset': 0, 'timeout': 0, 'http_err': 0}
+  [100/400] {'ok': 101, 'reset': 0, 'timeout': 0, 'http_err': 0}
+  [125/400] {'ok': 126, 'reset': 0, 'timeout': 0, 'http_err': 0}
+  [150/400] {'ok': 151, 'reset': 0, 'timeout': 0, 'http_err': 0}
+  [175/400] {'ok': 176, 'reset': 0, 'timeout': 0, 'http_err': 0}
+  [200/400] {'ok': 201, 'reset': 0, 'timeout': 0, 'http_err': 0}
+  [225/400] {'ok': 226, 'reset': 0, 'timeout': 0, 'http_err': 0}
+  [250/400] {'ok': 251, 'reset': 0, 'timeout': 0, 'http_err': 0}
+  [275/400] {'ok': 276, 'reset': 0, 'timeout': 0, 'http_err': 0}
+  [300/400] {'ok': 301, 'reset': 0, 'timeout': 0, 'http_err': 0}
+  [325/400] {'ok': 326, 'reset': 0, 'timeout': 0, 'http_err': 0}
+  [350/400] {'ok': 351, 'reset': 0, 'timeout': 0, 'http_err': 0}
+  [375/400] {'ok': 376, 'reset': 0, 'timeout': 0, 'http_err': 0}
+done: {'ok': 400, 'reset': 0, 'timeout': 0, 'http_err': 0}
+
+[-] no worker crashes observed in the error log for this run.
+    Note: hitting the wrong-moment OOM is probabilistic (AC:H);
+    increase --bursts or try another strategy.
